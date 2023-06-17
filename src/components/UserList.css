@@ -1,0 +1,32 @@
+
+.users-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    justify-items: center;
+  }
+  
+  @media (max-width: 1200px) {
+    .users-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .users-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 575px) {
+    .users-list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  .loading-icon{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
